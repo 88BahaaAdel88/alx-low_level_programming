@@ -1,4 +1,5 @@
-#include "main.h"
+#include "dog.h"
+#include <stdlib.h>
 
 /**
  * free_dog - frees your doggies
