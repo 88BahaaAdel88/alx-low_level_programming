@@ -1,5 +1,14 @@
 #include "variadic_functions.h"
 
+/**
+ * print_all - prints all kind of formats
+ * @char *: type of str
+ * @format: type of strings
+ * @...: formats to print
+ *
+ * Return: Nothing
+ */
+
 void print_all(const char * const format, ...)
 {
 	va_list ap;
@@ -9,9 +18,9 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while(format && format[i])
+	while (format && format[i])
 	{
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
 				printf("%s%c", separator, va_arg(ap, int));
